@@ -226,6 +226,9 @@ p{
   border: 1px solid var(--secondary-color);
   border-radius: 5px;
 }
+.contact-form textarea {
+  height: 100px;
+}
 .contact-form input:focus, .contact-form textarea:focus {
   outline: none;
   border: 1px solid var(--primary-color);
