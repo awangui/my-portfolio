@@ -12,9 +12,7 @@ function App() {
 
   return (
     <>
-
       <Navbar />
-     
       <Header />
       <div className='container'>
       <About  />
@@ -22,7 +20,6 @@ function App() {
       <Contact />
       </div>
       <Footer />
-    
     </>
   )
 }

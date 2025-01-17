@@ -14,7 +14,7 @@ function Navbar(){
             <div className="links">
                 <a href="https://github.com/awangui"><FontAwesomeIcon icon={faGithub} size="lg"  /></a>
                 <a href="https://www.linkedin.com/in/anita-wangui-9868001b9"><FontAwesomeIcon icon={faLinkedin} size="lg"/></a>
-                <a href="#"><FontAwesomeIcon icon={faMoon} size="lg"  /></a>
+                {/* <a href="#"><FontAwesomeIcon icon={faMoon} size="lg"  /></a> */}
             </div>
         </nav>
     )

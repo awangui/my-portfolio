@@ -7,11 +7,11 @@ function Contact(){
             <p>Let's connect! Send me a message below</p>
             <div>
                 <label htmlFor="name">Name:</label>
-                <input type="text" id="name" name="name" required />
+                <input type="text" id="name" name="name" placeholder="e.g John Doe" required />
             </div>
             <div>
                 <label htmlFor="email">Email:</label>
-                <input type="email" id="email" name="email" required />
+                <input type="email" id="email" name="email" placeholder="e.g johndoe@gmail.com" required />
             </div>
             <div>
                 <label htmlFor="message">Message:</label>

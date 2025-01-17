@@ -8,6 +8,7 @@ function Skills(){
            <span>PostgreSQL</span>
            <span>HTML</span>
            <span>CSS</span>
+           <span>PHP</span>
            <span>Bootstrap</span>
            <span>React.js</span>
            <span>Javascript</span>

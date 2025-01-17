@@ -8,6 +8,7 @@
   --button-bg-color: #0a58ca;
   --button-hover-bg-color: #0056b3;
   --button-text-color: #fff;
+  --nav-color: #f0f8ff;
 }
 *{
   margin: 0;
@@ -16,11 +17,20 @@
   list-style: none;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
+  /* font-size: 20px; */
 }
 body {
   background-color: var(--background-color);
   color: var(--text-color);
   line-height: 1.5;
+}
+h1{
+  text-align: center;
+  font-size:2em;
+}
+p{
+  line-height: 1.75;
+  font-size: 1.1rem;
 }
 .container{
   width:85%;
@@ -45,44 +55,47 @@ body {
 
 .navbar{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  background-color: #242424;
-  color: var(--button-text-color);
+  background-color:var(--nav-color);
+  color: var(--primary-color);
   z-index: 1;
   position: sticky;
   width: 100%;
   padding: 1rem 2rem;
   top:0;
+  font-size: 1.15rem;
 }
 .nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 40px;
 }
 .nav-item{
   margin: 0 10px;
+  top:0;
 }
 .links{
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .links a{
-    color: #fff;
+    color: var(--button-bg-color);
     margin: 0 5px;
-    font-size: 1.2em;
+    font-size: 0.95em;
   }
  /* Header */
 .hero{
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 100vh;
   color:var(--text-color);
   /* background-color: var(--primary-color); */
   width: 100%;
   padding: 0 5%;
+}
+.hero h1{
+  text-align: left;
 }
 .intro{
   margin-right: 100px;
@@ -94,8 +107,25 @@ body {
   object-fit: cover;
   border-radius: 50%;
 }
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .intro {
+    margin-right: 0;
+  }
+  .hero img {
+    width: 50%;
+    height: 220px;
+    object-fit: cover;
+  }
+  
+}
 /* About */
 
+/*skills*/
 .skills{
   display: flex;
   flex-wrap: wrap;
@@ -116,20 +146,26 @@ body {
 /* Projects */
 .projects{
   margin: 100px auto;
+  line-height: 1.75;
+  font-size: 1.1rem;
 }
 .projects h1{
   text-align: center;
   margin: 20px 0;
-  font-size: 2em;
 }
 .project{
   display: flex;
   flex-direction: row;
-  margin: 20px;
+  margin: 50px;
+  flex-wrap: wrap;
+  padding: 50px 0;
 }
 .project-image{
-  width: 50%;
   height: 400px;
+  flex: 1;
+}
+.project-title{
+  font-size: 1.5em;
 }
 .project img{
   width: 100%;
@@ -138,31 +174,68 @@ body {
 }
 .project-info{
   margin: auto;
-  padding: 20px;
+  padding: 40px;
+  flex: 1;
 }
 .number {
   font-size: 5vw;
   color: var(--primary-color);
   opacity: 0.5;
 }
+
+@media (max-width: 768px) {
+  .project {
+    flex-direction: column;
+  }
+  .project-image {
+    height: auto;
+  }
+}
 /* Contact */
 .contact-form{
-  text-align: center;
+  text-align: left;
   width: 50%;
   line-height: 2;
   box-shadow: 0 0 2px var(--secondary-color);
   padding: 50px;
   margin: 70px auto;
 }
+
+@media screen and (max-width: 768px) {
+  .contact-form {
+    width: 90%;
+  }
+}
+.contact-form h1, .contact-form p {
+  text-align: center;
+}
+.contact-form h1{
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+.contact-form label{
+  font-size: 1.2em;
+  color: var(--primary-color);
+}
 .contact-form input,
 .contact-form textarea {
   width: 100%;
   margin: 10px 0;
   padding: 10px;
+  height: 40px;
   border: 1px solid var(--secondary-color);
   border-radius: 5px;
 }
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: none;
+  border: 1px solid var(--primary-color);
+}
+.contact-form .btn{
+  display: block;
+  margin: 10px auto;
+}
 .contact-form button{
+  text-align: center;
   background-color: var(--button-bg-color);
   color:var(--button-text-color);
   border: none;
@@ -178,6 +251,6 @@ body {
 .footer{
   text-align: center;
   padding: 15px;
-  background-color: var(--secondary-color);
-  color: var(--button-text-color);
+  background-color: var(--nav-color);
+  color: var(--primary-color);
 }
