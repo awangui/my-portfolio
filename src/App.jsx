@@ -8,16 +8,14 @@ import Contact from './components/Contact'
 import './App.css'
 
 function App() {
- 
-
   return (
     <>
       <Navbar />
       <Header />
       <div className='container'>
-      <About  />
-      <Projects />
-      <Contact />
+        <About />
+        <Projects />
+        <Contact />
       </div>
       <Footer />
     </>

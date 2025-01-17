@@ -27,6 +27,7 @@ body {
 h1{
   text-align: center;
   font-size:2em;
+  font-weight: 600;
 }
 p{
   line-height: 1.75;
@@ -75,6 +76,16 @@ p{
 .nav-item{
   margin: 0 10px;
   top:0;
+  padding-bottom: 2px;
+}
+.nav-item a{
+  color: var(--primary-color);
+  display: inline-block;
+  padding-bottom: 2px;
+}
+.nav-item:hover a{
+  border-bottom: solid 1px var(--link-hover-color);
+  transition: border-bottom 0.3s;
 }
 .links{
   display: flex;
@@ -83,6 +94,9 @@ p{
     color: var(--button-bg-color);
     margin: 0 5px;
     font-size: 0.95em;
+  }
+  .links a:hover{
+    color: var(--button-hover-bg-color);
   }
  /* Header */
 .hero{
@@ -182,6 +196,9 @@ p{
   padding: 40px;
   flex: 1;
 }
+.project-info p{
+  padding: 15px 0;
+}
 .number {
   font-size: 5vw;
   color: var(--primary-color);
@@ -201,7 +218,7 @@ p{
   text-align: left;
   width: 50%;
   line-height: 2;
-  box-shadow: 0 0 2px var(--secondary-color);
+  box-shadow: 0 0 1px var(--secondary-color);
   padding: 50px;
   margin: 70px auto;
 }
