@@ -4,7 +4,7 @@ function Skills(){
         <h1>Skills</h1>
         <div className="skills">
            <span>Python</span>
-           <span>Django</span>
+           <span>Flask</span>
            <span>PostgreSQL</span>
            <span>HTML</span>
            <span>CSS</span>
@@ -12,6 +12,8 @@ function Skills(){
            <span>Bootstrap</span>
            <span>React.js</span>
            <span>Javascript</span>
+           <span>MySQL</span>
+           <span>SQLAlchemy</span>
         </div>
         </>
     );
