@@ -10,6 +10,17 @@
   --button-hover-bg-color: #0056b3;
   --button-text-color: #fff;
   --nav-color: #f0f8ff;
+  --dark-background-color: #242424;
+  --dark-text-color: #fff;
+  --dark-nav-color: #333;
+  --dark-button-bg-color: #0a58ca;
+  --dark-button-hover-bg-color: #0056b3;
+  --dark-button-text-color: #fff;
+  --dark-link-color: #646cff;
+  --dark-link-hover-color: #535bf2;
+  --dark-secondary-color: #333;
+  --dark-button-bg-color: #fff;
+
 }
 *{
   margin: 0;
@@ -20,10 +31,14 @@
   font-family: 'Poppins', sans-serif;
   /* font-size: 20px; */
 }
-body {
+.app {
   background-color: var(--background-color);
   color: var(--text-color);
   line-height: 1.5;
+}
+.app.dark-mode{
+  background-color: #242424;
+  color: #fff;
 }
 h1{
   text-align: center;
@@ -98,6 +113,9 @@ p{
   }
   .links a:hover{
     color: var(--button-hover-bg-color);
+  }
+  .dark-mode-toggle{
+    margin-left: 20px;
   }
  /* Header */
 .hero{
@@ -279,4 +297,69 @@ p{
   padding: 15px;
   background-color: var(--nav-color);
   color: var(--primary-color);
+}
+/* Dark Mode */
+.app.dark-mode {
+  background-color: var(--dark-background-color);
+  color: var(--dark-text-color);
+}
+
+.app.dark-mode .navbar {
+  background-color: var(--dark-nav-color);
+  color: var(--dark-text-color);
+}
+
+.app.dark-mode .nav-item a {
+  color: var(--dark-text-color);
+}
+
+.app.dark-mode .nav-item:hover a {
+  border-bottom: solid 1px var(--link-hover-color);
+}
+.app.dark-mode .links a {
+  color: var(--dark-button-bg-color);
+}
+.app.dark-mode .btn {
+  background-color: var(--dark-button-bg-color);
+  color: var(--dark-text-color);
+}
+
+.app.dark-mode .btn:hover {
+  background-color: var(--dark-button-hover-bg-color);
+}
+.app.dark-mode .hero{
+  color: var(--dark-text-color);
+}
+.app.dark-mode .contact-form {
+  box-shadow: 0 0 1px var(--dark-text-color);
+}
+
+.app.dark-mode .contact-form label {
+  color: var(--dark-text-color);
+}
+
+.app.dark-mode .contact-form input,
+.app.dark-mode .contact-form textarea {
+  background-color: var(--dark-nav-color);
+  color: var(--dark-text-color);
+  border: 1px solid var(--dark-text-color);
+}
+
+.app.dark-mode .contact-form input:focus,
+.app.dark-mode .contact-form textarea:focus {
+  border: 1px solid var(--primary-color);
+}
+
+.app.dark-mode .contact-form button {
+  background-color: var(--dark-button-bg-color);
+  color: var(--dark-text-color);
+}
+
+.app.dark-mode .contact-form button:hover {
+  background-color: var(--dark-button-hover-bg-color);
+}
+
+.app.dark-mode .footer {
+  background-color: var(--dark-nav-color);
+  color: var(--dark-text-color);
 }

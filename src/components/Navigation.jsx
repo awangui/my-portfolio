@@ -1,7 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse, faMoon } from "@fortawesome/free-solid-svg-icons";
+import { faMoon } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub} from "@fortawesome/free-brands-svg-icons";
-function Navbar(){
+import { faSun } from "@fortawesome/free-solid-svg-icons";
+function Navbar({darkMode, toggleDarkMode}) {
     return (
         <nav className="navbar">
             <ul className="nav">
@@ -14,9 +15,13 @@ function Navbar(){
             <div className="links">
                 <a href="https://github.com/awangui"><FontAwesomeIcon icon={faGithub} size="lg"  /></a>
                 <a href="https://www.linkedin.com/in/anita-wangui-9868001b9"><FontAwesomeIcon icon={faLinkedin} size="lg"/></a>
-                {/* <a href="#"><FontAwesomeIcon icon={faMoon} size="lg"  /></a> */}
             </div>
+            {/* Dark Mode toggle */}
+            <span className="dark-mode-toggle" onClick={toggleDarkMode}>
+                {darkMode ? <FontAwesomeIcon icon={faSun} size="lg" /> : <FontAwesomeIcon icon={faMoon} size="lg" />}
+            </span>
+            
         </nav>
-    )
+    );
 }
 export default Navbar;

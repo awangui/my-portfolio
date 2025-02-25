@@ -6,11 +6,13 @@ import Projects from './components/Projects'
 import Footer from './components/Footer'
 import Contact from './components/Contact'
 import './App.css'
+import { useState } from 'react'
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
   return (
-    <>
-      <Navbar />
+    <div className={darkMode ? 'app dark-mode' : 'app'}>
+            <Navbar darkMode={darkMode} toggleDarkMode={() => setDarkMode(!darkMode)} />
       <Header />
       <div className='container'>
         <About />
@@ -18,7 +20,7 @@ function App() {
         <Contact />
       </div>
       <Footer />
-    </>
+    </div>
   )
 }
 
