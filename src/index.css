@@ -140,14 +140,16 @@ p{
     }
     .nav-toggle .menu{
       display: block;
-      font-size: 1.5em;
       cursor: pointer;
+      transition: all 0.3s;
     }
     .nav-toggle .nav{
       display: block;
+      margin-right: 0;
+
     }
-    .links {
-      display: none;
+    .links span{
+      margin-left: 2px;
     }
   }
  /* Header */
