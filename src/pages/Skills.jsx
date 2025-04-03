@@ -8,12 +8,20 @@ function Skills(){
            <span>PostgreSQL</span>
            <span>HTML</span>
            <span>CSS</span>
-           <span>PHP</span>
+              <span>Tailwind CSS</span>
+              <span>PHP</span>
            <span>Bootstrap</span>
            <span>React.js</span>
+              <span>Redux</span>
            <span>Javascript</span>
+           <span>REST APIs</span>
            <span>MySQL</span>
            <span>SQLAlchemy</span>
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>Version Control</span>
+              
+
         </div>
         </>
     );

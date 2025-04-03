@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import heroImage from "../assets/images/hero-img.jpg";
+import heroImage from "../assets/images/hero.jpg";
 
 function Header() {
   const [text, setText] = useState("");
-  const fullText = "Hi there👋🏼, I am Anita Wangui";
+  const fullText = "Hi there! I am Anita Wangui";
 
   useEffect(() => {
     let index = 0;
